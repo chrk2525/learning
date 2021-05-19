@@ -1,0 +1,48 @@
+TASK1:
+------
+
+
+1. Cloning the git remote repositry
+
+$ git clone https://github.com/chrk2525/learning.git
+
+2. Create some files.
+
+$ vi filename -> click 'i' + <write some content> + click 'esc' + click ':wq' + click 'enter'
+
+3. Check the git status
+
+$ git status
+
+4. Add the changes into staging area.
+
+$ git add .
+
+5. commit the changes into local git repository
+
+$ git commit -m "commit message"
+
+6. Push the changes from local repository to remote repostory.
+
+$ git push
+
+====================================================================================================
+
+TASK2:
+------
+
+1. Create a branch called "sharath" from "main" branch
+
+$ git branch sharath
+
+2. Switch to "sharath" branch
+
+$ git checkout sharath
+
+3. Do some file modifications.
+
+4. Push the branch and the changes to the remote repository.
+
+$ git push -u origin sharath
+
+===================================================================================================
