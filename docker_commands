@@ -1,0 +1,39 @@
+1. To install docker ubuntu
+$ sudo apt  install docker.io
+
+2. To see the docker version
+$ docker --version
+
+3. To see the docker images
+$ sudo docker images
+
+4. To pull docker image from docker hub.
+$ sudo docker pull ubuntu
+
+5. To see all the containers
+$ sudo docker ps -a
+
+6. To run a docker container from a docker image in interactive mode.
+$ sudo docker run -it {Images_Id}
+
+7. To run a docker container from a docker image in detached mode.
+$ sudo docker run -d {Image_Id}
+
+8. To remove a docker container (stop it + remove it)
+$ sudo docker stop {Container_Id} - stop it
+$ sudo docker rm {Container_Id} - remove it
+
+9. To remove a docker image
+$ sudo docker rmi {Image_Id}
+
+10. Pull Jenkins Image
+$ sudo docker pull jenkins:2.60.3
+
+11. To run jenkins docker container
+$ sudo docker run -d --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home cd14cecfdb3a
+
+12. To install netstat in a ubuntu
+$ sudo apt install net-tools
+
+13. To list the "LISTENING PORTS" in a server.
+$  netstat -tulpn | grep LISTEN
