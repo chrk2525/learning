@@ -1,8 +1,8 @@
-1. To install docker ubuntu
+1. To install docker on ubuntu
 $ sudo apt  install docker.io
 
 2. To see the docker version
-$ docker --version
+$ sudo docker --version
 
 3. To see the docker images
 $ sudo docker images
@@ -13,7 +13,7 @@ $ sudo docker pull ubuntu
 5. To see all the containers
 $ sudo docker ps -a
 
-6. To run a docker container from a docker image in interactive mode.
+6. To run a docker container from a docker image in interactive terminal mode.
 $ sudo docker run -it {Images_Id}
 
 7. To run a docker container from a docker image in detached mode.
@@ -29,8 +29,8 @@ $ sudo docker rmi {Image_Id}
 10. Pull Jenkins Image
 $ sudo docker pull jenkins:2.60.3
 
-11. To run jenkins docker container
-$ sudo docker run -d --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home cd14cecfdb3a
+11. To run jenkins as a docker container
+$ sudo docker run -d --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home {Image_Id}
 
 12. To install netstat in a ubuntu
 $ sudo apt install net-tools
